@@ -1,0 +1,24 @@
+PODS:
+  - MyLayoutUI (0.1.0):
+    - TangramKit (~> 1.4.2)
+  - TangramKit (1.4.2)
+
+DEPENDENCIES:
+  - MyLayoutUI (from `../`)
+  - TangramKit
+
+SPEC REPOS:
+  trunk:
+    - TangramKit
+
+EXTERNAL SOURCES:
+  MyLayoutUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MyLayoutUI: ac5be03e1cc69b17308e16f666312f338f917a04
+  TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
+
+PODFILE CHECKSUM: 3e25c91765198704f788cd8c67dabc529a28b5d9
+
+COCOAPODS: 1.16.1

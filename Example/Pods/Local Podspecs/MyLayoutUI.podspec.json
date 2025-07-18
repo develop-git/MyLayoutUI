@@ -1,0 +1,35 @@
+{
+  "name": "MyLayoutUI",
+  "version": "0.1.0",
+  "summary": "A short description of MyLayoutUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/develop-git/MyLayoutUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "承轩": "develop-work@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/develop-git/MyLayoutUI.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "MyLayoutUI/Classes/**/*",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": [
+    "5.5"
+  ],
+  "dependencies": {
+    "TangramKit": [
+      "~> 1.4.2"
+    ]
+  },
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "$(SDKROOT)/usr/lib/swift"
+  },
+  "swift_version": "5.5"
+}

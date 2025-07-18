@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyLayoutUI'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of MyLayoutUI.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/承轩/MyLayoutUI'
+  s.homepage         = 'https://github.com/develop-git/MyLayoutUI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '承轩' => 'develop-work@outlook.com' }
-  s.source           = { :git => 'https://github.com/承轩/MyLayoutUI.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/develop-git/MyLayoutUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
 
   s.source_files = 'MyLayoutUI/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MyLayoutUI' => ['MyLayoutUI/Assets/*.png']
-  # }
+ s.requires_arc = true
+   
+   s.ios.deployment_target = '11.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.swift_versions = ['5.5']
+   
+   s.dependency 'TangramKit', '~> 1.4.2'
+
+   s.xcconfig = {
+       'LIBRARY_SEARCH_PATHS' => '$(SDKROOT)/usr/lib/swift',
+   }
 end

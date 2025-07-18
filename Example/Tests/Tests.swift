@@ -1,5 +1,4 @@
 import XCTest
-import MyLayoutUI
 
 class Tests: XCTestCase {
     

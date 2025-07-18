@@ -1,9 +1,11 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'MyLayoutUI_Example' do
   pod 'MyLayoutUI', :path => '../'
+  
+  pod 'TangramKit'
 
   target 'MyLayoutUI_Tests' do
     inherit! :search_paths
