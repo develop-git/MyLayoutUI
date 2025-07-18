@@ -9,7 +9,7 @@
 import TangramKit
 
 
-public typealias ViewBuilder<T> = (_ layout: T)->Void
+public typealias ViewBuilder<T> = (_ stack: T)->Void
 
 /// 垂直布局（子视图以垂直方向列表展示）
 /// - Parameters:
@@ -136,13 +136,13 @@ open class ZStack : TGFrameLayout {
     
     /// 重叠布局初始化
     /// - Parameters:
-    ///   - alignment:   子视图对齐方式 默认 无对齐
+    ///   - gravity:   子视图对齐方式 默认 无对齐
     ///   - viewBuilder: 视图布局设置回调
     @discardableResult
-    public init(alignment: TGGravity = .none, _ viewBuilder: ViewBuilder<ZStack>) {
+    public init(gravity: TGGravity = .none, _ viewBuilder: ViewBuilder<ZStack>) {
         super.init(frame: .zero)
         self.backgroundColor = UIColor.white
-        self.tg_gravity = alignment
+        self.tg_gravity = gravity
         viewBuilder(self)
     }
     

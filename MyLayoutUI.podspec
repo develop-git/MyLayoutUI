@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyLayoutUI'
-  s.version          = '1.0.0'
+  s.version          = '1.1.1'
   s.summary          = 'A short description of MyLayoutUI.'
 
 # This description is used to generate tags and improve search results.
@@ -41,4 +41,8 @@ TODO: Add long description of the pod here.
    s.xcconfig = {
        'LIBRARY_SEARCH_PATHS' => '$(SDKROOT)/usr/lib/swift',
    }
+   
+   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+   
 end

@@ -24,10 +24,6 @@ public extension UIView {
         view.addSubview(self)
         return self.lyt
     }
-    
-    var lyt: MyLayoutDSL {
-        return MyLayoutDSL(sizeClass: self)
-    }
 }
 
 // MARK: 布局视图TGBaseLayout及其子类具有的方法

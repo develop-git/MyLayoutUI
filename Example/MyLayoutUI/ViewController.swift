@@ -17,8 +17,11 @@ class ViewController: UIViewController {
         
         let v = ZStack()
         v.backgroundColor = .red
-        v.frame = CGRect(origin: .zero, size: CGSize(width: 300, height: 200))
-        v.add(to: view).padding(10)
+        v.add(to: view).padding(10).size(.fill)
+        
+        let vs = ZStack(gravity: .around) { stack in
+            
+        }
            
         let temp = UIView()
         temp.backgroundColor = .green

@@ -26,7 +26,7 @@
 		4596F242B8650B98D999A6776D80B530 /* ConstraintAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B30065609004DF853B9EAA55DE56C5 /* ConstraintAnchor.swift */; };
 		4B24F0446702649575D4A32517424C41 /* TangramKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C23D19CB632F83CCF72D5A943992FA2 /* TangramKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		564DA0A4CE9AA82A08605F5A90196002 /* Pods-MyLayoutUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8C6DE323512ABC7A3F34244271B9B4 /* Pods-MyLayoutUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5990C0B36146EDA92DF775506E503A73 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE608195BF9E09BD7BD75D008E810537 /* StackView.swift */; };
+		5990C0B36146EDA92DF775506E503A73 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE608195BF9E09BD7BD75D008E810537 /* Stacks.swift */; };
 		5F87853266963DC668578F5E82B9F832 /* TGLayoutPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881F69870A091A5FBFD3A5077327570 /* TGLayoutPos.swift */; };
 		6466C1FFB6E824964C4B104A520B5426 /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085D3DF548508F2BAA8F5E0C3B02313 /* Top.swift */; };
 		71F13848990C29AA14E160DB1E053124 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18718B36B0592D062AEA5104F8A36CBB /* View.swift */; };
@@ -146,7 +146,7 @@
 		D0D6D7FF59C883F9BC93C8A5C491D5D0 /* TangramKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.debug.xcconfig; sourceTree = "<group>"; };
 		D8BF7AE24BE72BCCE660B29962E27E89 /* MyLayoutUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyLayoutUI-prefix.pch"; sourceTree = "<group>"; };
 		DA706AB4C627CDCED92E5BEA1A282E1B /* Pods-MyLayoutUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyLayoutUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DE608195BF9E09BD7BD75D008E810537 /* StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		DE608195BF9E09BD7BD75D008E810537 /* Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stacks.swift; path = MyLayoutUI/Classes/Config/Stacks.swift; sourceTree = "<group>"; };
 		DEE554B6A2C61CE626049B2B681B036A /* Pods-MyLayoutUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyLayoutUI_Example-dummy.m"; sourceTree = "<group>"; };
 		E2F4D9F09E04DF6F9AC76335A8EA4C78 /* TGFloatLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFloatLayout.swift; path = TangramKit/TGFloatLayout.swift; sourceTree = "<group>"; };
 		E4733D180F18BD58FAC1D68AA96962D8 /* Margin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
@@ -270,7 +270,6 @@
 				4D3A617FD6C85789BDAC10C49E880855 /* LayoutAttributes.swift */,
 				3F2C6FED5D29FD1CC4856BFF2FC0ED42 /* LayoutExtraEnums.swift */,
 				B1D541C6FAF68B5F732C64F8C13DB625 /* MyLayoutDSL.swift */,
-				DE608195BF9E09BD7BD75D008E810537 /* StackView.swift */,
 			);
 			name = Config;
 			path = MyLayoutUI/Classes/Config;
@@ -296,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				936DF1110D94D5AC195C0B794CD77417 /* MyLayoutUI.swift */,
+				DE608195BF9E09BD7BD75D008E810537 /* Stacks.swift */,
 				76316FBB249169ADEAB4CA17A0FCC1AB /* Config */,
 				6CAF4F444CE326C23E662FF308EC39F8 /* Extensions */,
 				33784141D0C64692E4D2E96BB74ABC32 /* Pod */,
@@ -591,7 +591,7 @@
 				E7FEEE75CD49DD19ACCB52A26B1E640D /* MyLayoutUI-dummy.m in Sources */,
 				0CC0BA09E7EBDF603B074D329F947EF5 /* Padding.swift in Sources */,
 				EE1D111728EAAEB12ACF5630AF3422A8 /* Size.swift in Sources */,
-				5990C0B36146EDA92DF775506E503A73 /* StackView.swift in Sources */,
+				5990C0B36146EDA92DF775506E503A73 /* Stacks.swift in Sources */,
 				6466C1FFB6E824964C4B104A520B5426 /* Top.swift in Sources */,
 				1A5194021139D8B46E301F4F778771B0 /* Trailing.swift in Sources */,
 				AEA8E7C9C90C5F8CE63C6CB84F4C9C34 /* Vertical.swift in Sources */,
